@@ -13,7 +13,7 @@ Lines 54 - 58 of gfcptaddon.php **before**:
             require_once(self::get_base_path() . '/gfcptaddon_1-5.php');
 
 
-Lines 54 - 5 of gfcptaddon.php **after**:
+Lines 54 - 58 of gfcptaddon.php **after**:
 
 
             //include the base class
