@@ -52,10 +52,10 @@ class GFCPTAddon {
             global $gf_cpt_addon;
 
             //include the base class
-            require_once((new GFCPTAddon )->get_base_path() . '/gfcptaddonbase.php');
+            require_once(( new GFCPTAddon )->get_base_path() . '/gfcptaddonbase.php');
 
             //only supports 1.5 and over
-            require_once((new GFCPTAddon )->get_base_path() . '/gfcptaddon_1-5.php');
+            require_once(( new GFCPTAddon )->get_base_path() . '/gfcptaddon_1-5.php');
             $gf_cpt_addon = new GFCPTAddon1_5();
 
             //start me up!
