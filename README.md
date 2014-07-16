@@ -1,7 +1,27 @@
 *Strict* Gravity Forms + Custom Post Types
 ========================================
 
-Fixed version of the Gravity Forms + Custom Post Types plugin by Brad Vincent that doesn't throw errors when testing with PHP Strict
+Fixed version of the Gravity Forms + Custom Post Types plugin by Brad Vincent that doesn't throw errors when testing with PHP Strict. This is where the magic happens:
+
+Lines 54 - 58 of gfcptaddon.php **before**:
+
+`
+            //include the base class
+            require_once(self::get_base_path() . '/gfcptaddonbase.php');
+
+            //only supports 1.5 and over
+            require_once(self::get_base_path() . '/gfcptaddon_1-5.php');
+`
+
+Lines 54 - 59 of gfcptaddon.php **after**:
+
+`
+            //include the base class
+            require_once((new GFCPTAddon )->get_base_path() . '/gfcptaddonbase.php');
+
+            //only supports 1.5 and over
+            require_once((new GFCPTAddon )->get_base_path() . '/gfcptaddon_1-5.php');
+`
 
 Easily map your forms that create posts to a custom post type. Also map dropdown select, radio buttons list and checkboxes lists to a custom taxonomy.
 
