@@ -3,7 +3,7 @@
 
 Fixed version of the Gravity Forms + Custom Post Types plugin by Brad Vincent that doesn't throw errors when testing with PHP Strict. This is where the magic happens:
 
-Lines 54 - 58 of gfcptaddon.php **before**:
+Lines 54 - 58 of `gfcptaddon.php` **before**:
 
 
             //include the base class
@@ -13,7 +13,7 @@ Lines 54 - 58 of gfcptaddon.php **before**:
             require_once(self::get_base_path() . '/gfcptaddon_1-5.php');
 
 
-Lines 54 - 58 of gfcptaddon.php **after**:
+Lines 54 - 58 of `gfcptaddon.php` **after**:
 
 
             //include the base class
