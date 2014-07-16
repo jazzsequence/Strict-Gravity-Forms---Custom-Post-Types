@@ -74,7 +74,3 @@ You can now link the dropdown field to a post type and try to make it set the pa
 
 = Does this plugin rely on anything? =
 Yes, you need to install the [Gravity Forms Plugin](http://themergency.com/gravity-forms-addon-plugins/) for this plugin to work.
-
-== Upgrade Notice ==
-
-Please upgrade to the latest version
