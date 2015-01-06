@@ -50,14 +50,12 @@ class GFCPTAddon {
         if(self::is_gravityforms_installed()){
 
             global $gf_cpt_addon;
-
-            $GFCPTAddon = new GFCPTAddon;
             
             //include the base class
-            require_once($GFCPTAddon->get_base_path() . '/gfcptaddonbase.php');
+            require_once( plugin_dir_url( __FILE__ ) . 'gfcptaddonbase.php');
 
             //only supports 1.5 and over
-            require_once($GFCPTAddon->get_base_path() . '/gfcptaddon_1-5.php');
+            require_once( plugin_dir_url( __FILE__ ) . 'gfcptaddon_1-5.php');
             $gf_cpt_addon = new GFCPTAddon1_5();
 
             //start me up!
