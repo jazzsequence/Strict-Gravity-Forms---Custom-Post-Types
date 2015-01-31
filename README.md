@@ -17,10 +17,10 @@ Lines 54 - 58 of `gfcptaddon.php` **after**:
 
 
             //include the base class
-            require_once( plugin_dir_url( __FILE__ ) . 'gfcptaddonbase.php');
+            require_once( plugin_dir_path( __FILE__ ) . 'gfcptaddonbase.php');
             
             //only supports 1.5 and over
-            require_once( plugin_dir_url( __FILE__ ) . 'gfcptaddon_1-5.php');
+            require_once( plugin_dir_path( __FILE__ ) . 'gfcptaddon_1-5.php');
 
 
 Easily map your forms that create posts to a custom post type. Also map dropdown select, radio buttons list and checkboxes lists to a custom taxonomy.
